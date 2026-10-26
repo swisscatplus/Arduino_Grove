@@ -28,8 +28,6 @@
 
 #include "sensors.h"
 
-const int THRESHOLD = 30;       // <-- 1) choose a value, using what you measured in 2a
-
 void setup() {
   initGroveKit();
 }
@@ -38,18 +36,4 @@ void loop() {
   // ================================
   //   WRITE YOUR CODE HERE
   // ================================
-    int light = readLight();
- 
-  if (light < THRESHOLD) {     // <-- 2) is ">" the right comparison? Or "<" ?
-    setLED(true);
-  } else {
-    setLED(false);
-  }
- 
-  // Plot the light and the threshold together
-  Serial.print("Light:");
-  Serial.print(light);
-  Serial.print(",Threshold:");
-  Serial.println(THRESHOLD);
-  delay(100);                         // wait 0.1 s
 }
