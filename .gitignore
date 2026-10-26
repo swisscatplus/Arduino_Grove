@@ -1,0 +1,14 @@
+# Arduino IDE / arduino-cli build artifacts
+build/
+*.hex
+*.elf
+*.bin
+*.map
+
+# Editor cruft
+.vscode/
+*.swp
+
+# Office lock files (LibreOffice / Word, created while a document is open)
+.~lock.*#
+~$*

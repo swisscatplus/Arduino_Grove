@@ -1,0 +1,46 @@
+// Arduino_Grove.ino
+//
+// Programme de départ pour le Hackathon, pour la carte Grove Beginner Kit
+// For Arduino. Tous les capteurs et boutons de la carte sont déjà préparés
+// pour toi dans le fichier sensors.h (l'autre onglet à côté de celui-ci) —
+// tu n'as pas besoin de comprendre comment ils sont branchés.
+//
+// -> Ne touche pas à setup().
+// -> Écris ton code dans loop(), en utilisant les fonctions ci-dessous :
+//
+//   setLED(bool on)              allume/éteint la LED (true/false)
+//   buzz(frequence, duree_ms)    joue un son sur le buzzer
+//   isButtonPressed()            -> true si le bouton est appuyé
+//   readPotentiometer()          -> nombre entre 0 et 1023
+//   readLight()                  -> nombre entre 0 et 1023 (lumière)
+//   readSound()                  -> nombre entre 0 et 1023 (son)
+//   readTemperature()            -> température en °C
+//   readHumidity()                -> humidité en %
+//   readPressure()                -> pression en hPa
+//   readAcceleration(x, y, z)     -> remplit x, y, z (accélération en g)
+//   displayText(ligne1, ligne2, ligne3)  -> affiche jusqu'à 3 lignes sur l'écran
+//   displayClear()                -> efface l'écran
+//   printAllSensors()             -> affiche toutes les mesures dans le
+//                                     Moniteur Série, pratique pour tester
+//
+// La liste complète des fonctions et l'aide en cas de souci : voir README.md
+// Envie de demander à une IA (ChatGPT) d'écrire ton code ? Voir PROMPT_IA.md
+
+#include "sensors.h"
+
+void setup() {
+  initGroveKit();
+}
+
+void loop() {
+  // ================================
+  //   ECRIS TON CODE ICI
+  // ================================
+  // Exemple (à supprimer et remplacer par ton propre code) :
+  //
+  // float t = readTemperature();
+  // displayText("Temperature :", String(t) + " C");
+  // if (isButtonPressed()) {
+  //   buzz(1000, 200);
+  // }
+}
