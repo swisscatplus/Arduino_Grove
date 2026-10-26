@@ -135,5 +135,16 @@ described here:
   Monitor (115200 baud): all the readings are displayed live. Handy to check that the board and
   the libraries work, before writing your real logic.
 
-- **No port in Tools → Port.** Unplug and replug the USB cable, try another cable (some are
-  charge-only), and ask your instructor.
+- **No port in Tools → Port.** The board of the kit (Seeeduino Lotus) needs a USB driver on most
+  computers (administrator rights required). On
+  https://www.silabs.com/software-and-tools/usb-to-uart-bridge-vcp-drivers?tab=overview, open
+  the **Downloads** tab and get:
+  - **Windows 10 / 11:** *CP210x Universal Windows Driver*. Extract the ZIP completely, then
+    right-click `silabser.inf` → **Install**.
+  - **macOS:** *CP210x VCP Mac OSX Driver*. Open the ZIP and the `.dmg`, run the installer, and
+    if macOS blocks it, click **Allow** in System Settings → Privacy & Security, then restart.
+
+  Then unplug and replug the kit: a port appears in Tools → Port (on Windows, also in Device
+  Manager → Ports as "Silicon Labs CP210x USB to UART Bridge"). Older kits (Seeeduino Lotus
+  v1.0) use a CH340 chip and need the CH340 driver instead. Otherwise, try another USB cable
+  (some are charge-only).
