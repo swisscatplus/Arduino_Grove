@@ -12,3 +12,6 @@ build/
 # Office lock files (LibreOffice / Word, created while a document is open)
 .~lock.*#
 ~$*
+
+# Local archive of the original (French / hackathon) files
+Archives/
