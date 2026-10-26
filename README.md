@@ -23,8 +23,13 @@ sensors are wired or how to start them.
 
 ## Getting started
 
-1. Open `Arduino_Grove.ino` in the Arduino IDE (`sensors.h` appears as a second tab next to it -
-   you do not need to touch it).
+1. Get the code: clone this repository
+   (`git clone https://github.com/swisscatplus/Arduino_Grove.git`) or download it as a ZIP
+   (green **Code** button → **Download ZIP**, then extract it). The Arduino IDE requires the
+   folder containing `Arduino_Grove.ino` to be named exactly `Arduino_Grove` (rename it if you
+   downloaded the ZIP, GitHub adds `-main`).
+   Then open `Arduino_Grove.ino` in the Arduino IDE (`sensors.h` appears as a second tab next to
+   it - you do not need to touch it).
 2. Install the required libraries (menu **Tools → Manage Libraries...**, then search for each
    name below and click Install):
    - **U8g2** by oliver - for the OLED screen
